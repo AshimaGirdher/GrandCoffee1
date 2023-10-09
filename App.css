@@ -1,0 +1,113 @@
+.home {
+
+  height: 60vh;
+  width: 100%;
+  background-color: lightgray;
+
+}
+
+.hm2 {
+
+  height: 80vh;
+  width: 100%;
+  background: url("https://dailycoffeenews.com/wp-content/uploads/2018/10/coffee-801781_1280.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: burlywood;
+
+  opacity: .9;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.hm3 {
+
+  height: 600px;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1463797221720-6b07e6426c24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZmVlJTIwc2hvcCUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&w=1000&q=80");
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: .8;
+
+}
+
+
+
+.hide {
+  display: none
+}
+
+.mydiv:hover+.hide {
+  display: block;
+  background-color: white;
+}
+
+.mydiv {
+  height: 200px;
+  background: orangered;
+  color: white;
+}
+.mydiv:hover {
+  height: 200px;
+  background: white;
+  color: black !important;
+}
+
+
+.ab {
+
+
+  background: url("https://images.news18.com/ibnlive/uploads/2022/04/painting-of-filter-coffee.jpg");
+  background-size: cover;
+  border-radius: 10px;
+}
+
+
+.half-a-border-on-top {
+  position: relative;
+  /* width: 250px; */
+  /* height: 41px; */
+  padding: 7px;
+  /* margin: 25px; */
+  /* background: lightgray; */
+  border: none;
+  text-align: center;
+}
+
+.half-a-border-on-top::before,
+.half-a-border-on-top::after {
+  position: absolute;
+  width: 203px;
+  height: 50px;
+  content: "";
+}
+
+.half-a-border-on-top::before {
+  left: 0;
+  top: 0;
+  border-left: 3px solid black;
+  border-top: 3px solid black;
+}
+
+.half-a-border-on-top::after {
+  right: 0;
+  bottom: 0;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+@media only screen and (max-width: 600px){
+
+  .hm3{
+    height: fit-content;
+    background-color: aliceblue;
+  }
+
+  
+}
